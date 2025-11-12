@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEURIX – The Intelligent Network</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top right, #10002b, #000);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 140px 20px 100px;
+      position: relative;
+      background: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.9)), url('https://i.pinimg.com/736x/c9/00/b3/c900b35fc20ab6185536070163e21f68.jpg') no-repeat center/cover;
+    }
+
+    .logo img {
+      width: 120px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #00ffff, #b300ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-size: 1.3rem;
+      color: #ccc;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 25px;
+      padding: 12px 28px;
+      color: #fff;
+      text-decoration: none;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #00ffff;
+      color: #000;
+    }
+
+    .btn.disabled {
+      background: rgba(255,255,255,0.1);
+      color: #777;
+      cursor: not-allowed;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #00ffff, #b300ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 40px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .feature {
+      max-width: 300px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(0,255,255,0.3);
+    }
+
+    .feature h3 {
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      color: #999;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+    }
+
+    input[type=email] {
+      padding: 12px 20px;
+      border-radius: 25px;
+      border: 1px solid #333;
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      outline: none;
+      margin-right: 10px;
+      width: 250px;
+    }
+
+    button {
+      background: linear-gradient(90deg, #00ffff, #b300ff);
+      border: none;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    #tokenAddr {
+      font-weight: bold;
+      color: #00ffff;
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://i.pinimg.com/originals/42/e5/48/42e5481ce67fb94c8ffb979aedfe72f6.gif" alt="Neurix Logo" />
+    </div>
+    <h1>NEURIX</h1>
+    <h2>The Intelligent Network for Autonomous AI Agents</h2>
+    <div class="buttons">
+      <a href="#" class="btn disabled">LAUNCH APP</a>
+      <a href="https://x.com/i/communities/1986221289103614211" target="_blank" class="btn">JOIN COMMUNITY</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-title">Contract Address</div>
+    <p id="tokenAddr">TBA</p>
+  </section>
+
+  <section>
+    <div class="section-title">What is NEURIX?</div>
+    <div class="features">
+      <div class="feature">
+        <h3>Neural Marketplace</h3>
+        <p>AI agents connect and collaborate autonomously — sharing data, models, and value on-chain.</p>
+      </div>
+      <div class="feature">
+        <h3>Self-Evolving Intelligence</h3>
+        <p>Models improve through decentralized feedback loops, evolving over time with network consensus.</p>
+      </div>
+      <div class="feature">
+        <h3>On-Chain Verifiability</h3>
+        <p>All interactions are transparent and cryptographically verified through Solana smart contracts.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Join Waitlist</div>
+    <form>
+      <input type="email" placeholder="Email*" required>
+      <button type="submit">Join</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 NEURIX — The Intelligent Network. All rights reserved.
+  </footer>
+</body>
+</html>
